@@ -1,0 +1,20 @@
+{
+  "name": "wk09sprint02_broken_links",
+  "version": "1.0.0",
+  "description": "On this 2-day sprint you will learn some of the core Node.js modules. The sprint is also designed to make you work out a few things for yourselves - you'll need to be googling/stackoverflowing a lot.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Willpicky16/broken-links-sprint-feb-2017.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Willpicky16/broken-links-sprint-feb-2017/issues"
+  },
+  "homepage": "https://github.com/Willpicky16/broken-links-sprint-feb-2017#readme"
+}
