@@ -4,7 +4,10 @@
   "description": "On this 2-day sprint you will learn some of the core Node.js modules. The sprint is also designed to make you work out a few things for yourselves - you'll need to be googling/stackoverflowing a lot.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./spec",
+    "lint": "eslint ./",
+    "posttest": "npm run lint",
+    "precommit": "npm test"
   },
   "repository": {
     "type": "git",
