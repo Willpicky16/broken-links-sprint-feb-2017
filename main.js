@@ -14,6 +14,7 @@ function validateUrl(url) {
         return false;
     } else {
         console.log('success');
+        return true;
     }
 }
 
