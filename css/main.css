@@ -13,3 +13,8 @@ h2 {
   border: solid 1px;
   text-align: center;
 }
+
+.logo {
+  width: 100px;
+  height: auto;
+}
