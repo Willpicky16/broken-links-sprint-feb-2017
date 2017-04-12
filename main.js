@@ -1,4 +1,6 @@
 const fs = require('fs');
+var http = require('http');
+var https = require('https');
 
 function writeUrlToFile(url) {
     fs.writeFile("initialUrl.json", url, "utf8", (err) => {
@@ -18,8 +20,22 @@ function validateUrl(url) {
     }
 }
 
-function pingUrl(url) {
+function httpsCurl(url) {
 
+    const reg = /https/.test(url);
+    let identifier = '';
+
+    reg ? identifier = https : identifier = http;
+
+    identifier.get(url, (res) => {
+        console.log('statusCode:', res.statusCode);
+        console.log('headers:', res.headers);
+
+        res.on('data', (d) => {
+            process.stdout.write(d);
+        });
+
+    }).on('error', (e) => {
+        console.error(e);
+    });
 }
-
-writeUrlToFile('http://www.msn.com');
