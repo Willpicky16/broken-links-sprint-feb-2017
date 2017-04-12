@@ -9,8 +9,9 @@
     <h1>Broken Links Checker</h1>
     <form class="form">
       <h2>The URL finder Form</h2>
-      <input type="text" id="userURL" placeholder="Website URL"/>
-      <input type="button" id="button" value="Search"/>
+      <input name="userURL" type="text" id="userURL" placeholder="Website URL"/>
+      <input type="button" id="button" value="Search" onclick="validateUrl(document.getElementById('userURL').value)"/>
     </form>
   </body>
+  <script type="text/javascript" src="./main.js"></script>
 </html>
