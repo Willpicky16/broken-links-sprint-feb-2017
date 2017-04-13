@@ -32,10 +32,14 @@ function httpsCurl(url) {
         console.log('headers:', res.headers);
 
         res.on('data', (d) => {
-            process.stdout.write(d);
+            fs.writeFile('curlOutput.txt', d, (err) => {
+                if (err) throw err;
+                console.log('The curl output has been saved!');
+            });
         });
-
     }).on('error', (e) => {
         console.error(e);
     });
 }
+
+
