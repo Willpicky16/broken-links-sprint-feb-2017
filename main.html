@@ -6,12 +6,17 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <h1><img class="logo" src="./img/UK.svg"/> Broken Links Checker <img class="logo" src="./img/Brazil.svg"/></h1>
+    <!-- <h1><img class="logo" src="./img/UK.svg"/> Broken Links Checker <img class="logo" src="./img/Brazil.svg"/></h1> -->
+    <h1>Broken Links Checker</h1>
     <form class="form">
       <h2>The URL finder Form</h2>
       <input name="userURL" type="text" id="userURL" placeholder="Website URL"/>
       <input type="button" id="button" value="Search" onclick="validateUrl(document.getElementById('userURL').value)"/>
     </form>
+    <div class="results">
+      <h2>Results</h2>
+      <div id="result"></div>
+    </div>
   </body>
-  <script type="text/javascript" src="./main.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </html>

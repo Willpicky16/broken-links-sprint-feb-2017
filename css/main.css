@@ -18,3 +18,21 @@ h2 {
   width: 100px;
   height: auto;
 }
+
+.results {
+  border: solid 1px;
+  text-align: center;
+}
+.results h2 {
+  color: purple;
+}
+
+.error {
+  text-align: center;
+  color: red;
+}
+
+.success {
+  text-align: center;
+  color: green;
+}
